@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+    <button class="head">How To Play?</button>
+     <img src="./Dice Images/dice-5.png" alt="" class="img-dice">
+     <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1 class="rules">How to Play the Game?</h1>
+      <ul>
+          <li>Start With NEW GAME</li>
+          <li>The lite Background Color represents the player1 is being active and You can change it to Player 2 and vice versa by pressing Hold button </li>
+          <li>Now The active player needs to roll a dice and the dice number except 1 adds to the current Score.</li>
+          <li>Whenever The dice number is 1 your current score become Zero and another player will be active and vice versa.</li>
+          <li>In order to maintain your score you need to press hold button,when the hold button pressed the current score will be added to total score and another player will be active and vice versa.</li>
+          <li>If total Score is Greater that or Equal to 100 then the corresponding player wins the game</li>
+      </ul>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="player0 active-1">
+            <h1 class="p0">Player 1</h1>
+            <br>
+            <p class="tscore1">43</p>
+            <div class="current1">
+                <div class="crnt">
+                    <p>CURRENT</p>
+                <br>
+                <p class="score1">43</p>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <button class="new">🔄 NEW GAME</button>
+            <button class="roll">🎲 ROLL DICE</button>
+            <button class="hold">📥 HOLD</button>
+        </div>
+        <div class="player1">
+            <h1 class="p1">Player 2</h1>
+            <br>
+            <p class="tscore2">43</p>
+            <div class="current2">
+               <div class="crnt">
+                    <p>CURRENT</p>
+                <br>
+                <p class="score2">43</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay hidden"></div>
+      <div class="ft">
+        <p>Made by Lokesh</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
